@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := app-template
+PROJECT_NAME := esp32cam_cat_feeder
 
 include $(IDF_PATH)/make/project.mk
 
