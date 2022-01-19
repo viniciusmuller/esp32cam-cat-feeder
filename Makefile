@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := esp32cam_cat_feeder
+PROJECT_NAME := esp32cam_pet_feeder
 
 include $(IDF_PATH)/make/project.mk
 

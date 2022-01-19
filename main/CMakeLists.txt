@@ -1,8 +1,8 @@
-# Edit following two lines to set component requirements (see docs)
-set(COMPONENT_REQUIRES )
-set(COMPONENT_PRIV_REQUIRES )
+idf_component_register(
+    SRCS
+        "main.cc"
+        "app_camera_esp.c"
+        "constants.cc"
+    PRIV_REQUIRES tflite-lib esp32-camera spi_flash
+    INCLUDE_DIRS "")
 
-set(COMPONENT_SRCS "main.c")
-set(COMPONENT_ADD_INCLUDEDIRS "")
-
-register_component()
