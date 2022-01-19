@@ -6,6 +6,6 @@
 <!-- TODO -->
 
 # Usage
-- `make build`
-- `make flash`
-- `make monitor`
+- `idf.py build`
+- `idf.py flash`
+- `idf.py monitor`
