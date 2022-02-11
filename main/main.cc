@@ -20,7 +20,6 @@ extern "C" void app_main(void) {
   uart_set_baudrate(uart_num, 921600);
 
   if (app_camera_init() == -1) {
-    printf("I could not start the camera :sob:\n");
     return;
   }
 
