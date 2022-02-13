@@ -12,9 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
+// This file was modified
 
-#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_PERSON_DETECTION_ESP_APP_CAMERA_ESP_H_
-#define TENSORFLOW_LITE_MICRO_EXAMPLES_PERSON_DETECTION_ESP_APP_CAMERA_ESP_H_
+#ifndef APP_CAMERA_H
+#define APP_CAMERA_H
 
 #include "sensor.h"
 #include "esp_camera.h"
@@ -27,9 +28,9 @@ limitations under the License.
  * PIXFORMAT_YUV422,    // 2BPP/YUV422
  * PIXFORMAT_GRAYSCALE, // 1BPP/GRAYSCALE
  * PIXFORMAT_JPEG,      // JPEG/COMPRESSED
- * PIXFORMAT_RGB888,    // 3BPP/RGB888
+ * PIXFORMAT_RGB888,    // 3BPP/RGB888 (errors out with "requested format is not supported")
  */
-#define CAMERA_PIXEL_FORMAT PIXFORMAT_GRAYSCALE
+#define CAMERA_PIXEL_FORMAT PIXFORMAT_RGB565
 
 /*
  * FRAMESIZE_96X96,    // 96x96
@@ -177,4 +178,4 @@ int app_camera_init();
 }
 #endif
 
-#endif  // TENSORFLOW_LITE_MICRO_EXAMPLES_PERSON_DETECTION_ESP_APP_CAMERA_ESP_H_
+#endif  // APP_CAMERA_H
