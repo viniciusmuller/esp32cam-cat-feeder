@@ -3,7 +3,7 @@ Brotli==1.0.9
 cffi==1.15.0
 click==8.0.3
 construct==2.10.54
-cryptography==3.4.8
+cryptography==39.0.1
 ecdsa==0.17.0
 Flask==0.12.5
 Flask-Compress==1.10.1
